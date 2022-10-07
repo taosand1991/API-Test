@@ -1,2 +1,2 @@
-### API testing with Mocha and Chai
+### API testing with Mocha and Chai with Typescript
 

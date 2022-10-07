@@ -1,5 +1,5 @@
 import { HttpClient } from './../config/httpFile';
-import { AxiosResponse, AxiosError } from 'axios';
+import { AxiosResponse } from 'axios';
 
 
 
@@ -39,11 +39,11 @@ class ApiHelper {
         return HttpClient.get(endpoint, id);
     }
 
-    register =  async (endpoint: string, data: {email: string, password: string} ) : Promise<AxiosResponse> => {
+    register =  async (endpoint: string, data: {email: string, password?: string} ) : Promise<AxiosResponse> => {
         return HttpClient.post(endpoint, data);
     } 
 
-    login =  async (endpoint: string, data: {email: string, password: string}) : Promise<AxiosResponse> => {
+    login =  async (endpoint: string, data: {email: string, password?: string}) : Promise<AxiosResponse> => {
         return HttpClient.post(endpoint, data);
     }
 

@@ -31,6 +31,7 @@
         "indent":"error",
         "no-empty":"error",
         "no-var":"error",
-        "no-implicit-coercion":"error"
+        "no-implicit-coercion":"error",
+        "quotes":["error", "single", {"allowTemplateLiterals": true}]
     }
 }

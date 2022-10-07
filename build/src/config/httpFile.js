@@ -44,24 +44,25 @@ class HttpClient {
     static get(endpoint, id) {
         return __awaiter(this, void 0, void 0, function* () {
             const baseUrl = id ? `${base_1.default.apiBaseUrl}/${endpoint}/${id}` : `${base_1.default.apiBaseUrl}/${endpoint}`;
-            // try {
-            const response = yield (0, axios_1.default)({
-                url: baseUrl,
-                method: HttpMethods.GET,
-            });
-            return response;
-            // } catch (error) {
-            //     if(error instanceof AxiosError ){
-            //         // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-            //         return error.response?.data
-            //     }
-            //     return error
-            // }
+            try {
+                const response = yield (0, axios_1.default)({
+                    url: baseUrl,
+                    method: HttpMethods.GET,
+                });
+                // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+                return response;
+            }
+            catch (error) {
+                if (error instanceof axios_1.AxiosError) {
+                    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+                    return error.response;
+                }
+                return error;
+            }
         });
     }
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     static post(endpoint, requestBody) {
-        var _a;
         return __awaiter(this, void 0, void 0, function* () {
             const baseUrl = `${base_1.default.apiBaseUrl}/${endpoint}`;
             try {
@@ -75,14 +76,13 @@ class HttpClient {
             catch (error) {
                 if (error instanceof axios_1.AxiosError) {
                     // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-                    return (_a = error.response) === null || _a === void 0 ? void 0 : _a.data;
+                    return error.response;
                 }
                 return error;
             }
         });
     }
     static delete(endpoint, id) {
-        var _a;
         return __awaiter(this, void 0, void 0, function* () {
             const baseUrl = `${base_1.default.apiBaseUrl}/${endpoint}/${id}`;
             try {
@@ -95,16 +95,15 @@ class HttpClient {
             catch (error) {
                 if (error instanceof axios_1.AxiosError) {
                     // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-                    return (_a = error.response) === null || _a === void 0 ? void 0 : _a.data;
+                    return error.response;
                 }
                 return error;
             }
         });
     }
     static put(endpoint, data, id) {
-        var _a;
         return __awaiter(this, void 0, void 0, function* () {
-            const baseUrl = `${base_1.default.apiBaseUrl}/${id}`;
+            const baseUrl = `${base_1.default.apiBaseUrl}/${endpoint}/${id}`;
             try {
                 const response = yield (0, axios_1.default)({
                     url: baseUrl,
@@ -116,16 +115,15 @@ class HttpClient {
             catch (error) {
                 if (error instanceof axios_1.AxiosError) {
                     // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-                    return (_a = error.response) === null || _a === void 0 ? void 0 : _a.data;
+                    return error.response;
                 }
                 return error;
             }
         });
     }
     static patch(endpoint, data, id) {
-        var _a;
         return __awaiter(this, void 0, void 0, function* () {
-            const baseUrl = `${base_1.default.apiBaseUrl}/${id}`;
+            const baseUrl = `${base_1.default.apiBaseUrl}/${endpoint}/${id}`;
             try {
                 const response = yield (0, axios_1.default)({
                     url: baseUrl,
@@ -137,7 +135,7 @@ class HttpClient {
             catch (error) {
                 if (error instanceof axios_1.AxiosError) {
                     // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-                    return (_a = error.response) === null || _a === void 0 ? void 0 : _a.data;
+                    return error.response;
                 }
                 return error;
             }

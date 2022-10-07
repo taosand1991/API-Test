@@ -1,5 +1,8 @@
 {
     "timeout":"3000",
     "require":"ts-node/register",
-    "spec": ["./test/**/*.ts"]
+    "spec": ["./test/**/*.ts"],
+    "reporter": "mochawesome",
+    "reporter-option":["reportFilename=mocha report", "reportDir=./report"]
+    
 }

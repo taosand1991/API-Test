@@ -3,6 +3,7 @@
 import { AxiosResponse } from 'axios';
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import {expect} from 'chai'
+import { describe } from 'mocha';
 import apiHelper from '../src/helpers/api.helper';
 import Data from '../src/utils/base'
 
@@ -190,6 +191,15 @@ describe('Smoke API Testing of reqres', () => {
             response = await apiHelper.register('register', {email: Data.dataProps[0].email});
             expect(response.status).to.eql(400);
             expect(response.data).to.eql(Data.errorProps);
+        })
+    })
+
+    describe('Delayed Response', () => {
+        it('verify the timout for the response', async () => {
+            const response = await apiHelper.getUsers('users?delay=3');
+            setTimeout(() => {
+                expect(response.status).to.eql(200)
+            }, 5000)
         })
     })
 })

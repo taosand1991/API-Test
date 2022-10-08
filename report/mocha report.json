@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 10,
-    "tests": 28,
-    "passes": 28,
+    "suites": 11,
+    "tests": 29,
+    "passes": 29,
     "pending": 0,
     "failures": 0,
-    "start": "2022-10-07T20:36:05.368Z",
-    "end": "2022-10-07T20:36:08.364Z",
-    "duration": 2996,
-    "testsRegistered": 28,
+    "start": "2022-10-08T10:06:57.351Z",
+    "end": "2022-10-08T10:07:04.793Z",
+    "duration": 7442,
+    "testsRegistered": 29,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3b8bf66b-693b-4a1f-8c42-f0defb30fdc3",
+      "uuid": "819f4818-81c6-42eb-a004-a2d9c69cbd32",
       "title": "",
       "fullFile": "C:\\Users\\TAOSAND\\Projects Folder\\api_test\\test\\api.spec.ts",
       "file": "\\test\\api.spec.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f19f3a65-4c09-4ee0-aa8f-c89d61401b37",
+          "uuid": "157f6445-a1ca-40ef-b49b-c82f35b02614",
           "title": "Smoke API Testing of reqres",
           "fullFile": "C:\\Users\\TAOSAND\\Projects Folder\\api_test\\test\\api.spec.ts",
           "file": "\\test\\api.spec.ts",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "4aadb37d-ab44-49c5-9f6d-4adfb987d784",
+              "uuid": "8b849a19-d699-4b75-ac64-3a92c596599e",
               "title": "Get users resource of the API",
               "fullFile": "C:\\Users\\TAOSAND\\Projects Folder\\api_test\\test\\api.spec.ts",
               "file": "\\test\\api.spec.ts",
@@ -45,7 +45,7 @@
                   "title": "\"before all\" hook in \"Get users resource of the API\"",
                   "fullTitle": "Smoke API Testing of reqres Get users resource of the API \"before all\" hook in \"Get users resource of the API\"",
                   "timedOut": false,
-                  "duration": 224,
+                  "duration": 247,
                   "state": null,
                   "speed": null,
                   "pass": false,
@@ -54,8 +54,8 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.getUsers('users');\n        })",
                   "err": {},
-                  "uuid": "a22b227b-4cd4-44bb-9f2b-e258ed4c2afc",
-                  "parentUUID": "4aadb37d-ab44-49c5-9f6d-4adfb987d784",
+                  "uuid": "264c2edb-2476-40a8-9735-2f0aa353f4d9",
+                  "parentUUID": "8b849a19-d699-4b75-ac64-3a92c596599e",
                   "isHook": true,
                   "skipped": false
                 }
@@ -66,7 +66,7 @@
                   "title": "verify the response status of the get users resource",
                   "fullTitle": "Smoke API Testing of reqres Get users resource of the API verify the response status of the get users resource",
                   "timedOut": false,
-                  "duration": 2,
+                  "duration": 1,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -75,8 +75,8 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.status, 'expect response to be 200').to.eql(200);",
                   "err": {},
-                  "uuid": "136b6f61-8588-495b-befc-f3540284249f",
-                  "parentUUID": "4aadb37d-ab44-49c5-9f6d-4adfb987d784",
+                  "uuid": "2f29d2b5-9090-4ed7-be8f-2be8efdb0d47",
+                  "parentUUID": "8b849a19-d699-4b75-ac64-3a92c596599e",
                   "isHook": false,
                   "skipped": false
                 },
@@ -93,8 +93,8 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.data.per_page).to.eql(6);\n(0, chai_1.expect)(response.data.data.length).to.lessThanOrEqual(6);",
                   "err": {},
-                  "uuid": "9e36f879-336e-418c-8573-b0b729a9efc4",
-                  "parentUUID": "4aadb37d-ab44-49c5-9f6d-4adfb987d784",
+                  "uuid": "3b4b6c6c-943e-4f37-a0c0-82a98b31b0e8",
+                  "parentUUID": "8b849a19-d699-4b75-ac64-3a92c596599e",
                   "isHook": false,
                   "skipped": false
                 },
@@ -102,7 +102,7 @@
                   "title": "verify the object property of the users data",
                   "fullTitle": "Smoke API Testing of reqres Get users resource of the API verify the object property of the users data",
                   "timedOut": false,
-                  "duration": 4,
+                  "duration": 3,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -111,8 +111,8 @@
                   "context": null,
                   "code": "// eslint-disable-next-line @typescript-eslint/no-unsafe-call\nfor (let i = 0; i < response.data.data.length - 1; i++) {\n    (0, chai_1.expect)(Object.getOwnPropertyNames(response.data.data[i])).to.include(base_1.default.dataUserProperty[i]);\n}",
                   "err": {},
-                  "uuid": "8d1f6eb4-5f23-4c72-8345-03c92038d024",
-                  "parentUUID": "4aadb37d-ab44-49c5-9f6d-4adfb987d784",
+                  "uuid": "e176b821-d747-489f-a2cb-bf7660e9e93c",
+                  "parentUUID": "8b849a19-d699-4b75-ac64-3a92c596599e",
                   "isHook": false,
                   "skipped": false
                 },
@@ -129,8 +129,8 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.data.page, 'expect page to be 1').to.eql(1);",
                   "err": {},
-                  "uuid": "dc815eb6-a84c-404a-bb6b-98866ed3b31b",
-                  "parentUUID": "4aadb37d-ab44-49c5-9f6d-4adfb987d784",
+                  "uuid": "f5723ca1-f1b4-41d6-a321-3e3073152ce4",
+                  "parentUUID": "8b849a19-d699-4b75-ac64-3a92c596599e",
                   "isHook": false,
                   "skipped": false
                 },
@@ -138,7 +138,7 @@
                   "title": "verify the page of the data to be 2",
                   "fullTitle": "Smoke API Testing of reqres Get users resource of the API verify the page of the data to be 2",
                   "timedOut": false,
-                  "duration": 140,
+                  "duration": 169,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -147,30 +147,30 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.getUsers('users?page=2');\n            (0, chai_1.expect)(response.data.page, 'expect page to be 2').to.eql(2);\n        })",
                   "err": {},
-                  "uuid": "15116183-b8f6-48e3-80cd-3d88db9ea579",
-                  "parentUUID": "4aadb37d-ab44-49c5-9f6d-4adfb987d784",
+                  "uuid": "0a59c5b0-bd6c-4795-acc5-79df73c554f7",
+                  "parentUUID": "8b849a19-d699-4b75-ac64-3a92c596599e",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "136b6f61-8588-495b-befc-f3540284249f",
-                "9e36f879-336e-418c-8573-b0b729a9efc4",
-                "8d1f6eb4-5f23-4c72-8345-03c92038d024",
-                "dc815eb6-a84c-404a-bb6b-98866ed3b31b",
-                "15116183-b8f6-48e3-80cd-3d88db9ea579"
+                "2f29d2b5-9090-4ed7-be8f-2be8efdb0d47",
+                "3b4b6c6c-943e-4f37-a0c0-82a98b31b0e8",
+                "e176b821-d747-489f-a2cb-bf7660e9e93c",
+                "f5723ca1-f1b4-41d6-a321-3e3073152ce4",
+                "0a59c5b0-bd6c-4795-acc5-79df73c554f7"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 147,
+              "duration": 174,
               "root": false,
               "rootEmpty": false,
-              "_timeout": 3000
+              "_timeout": 5000
             },
             {
-              "uuid": "fa23213d-10ae-4d68-a893-49ec19225475",
+              "uuid": "5b0c1ce0-3f10-492c-83ac-ca3b042922dc",
               "title": "GET user resource of the API",
               "fullFile": "C:\\Users\\TAOSAND\\Projects Folder\\api_test\\test\\api.spec.ts",
               "file": "\\test\\api.spec.ts",
@@ -179,7 +179,7 @@
                   "title": "\"before all\" hook in \"GET user resource of the API\"",
                   "fullTitle": "Smoke API Testing of reqres GET user resource of the API \"before all\" hook in \"GET user resource of the API\"",
                   "timedOut": false,
-                  "duration": 146,
+                  "duration": 174,
                   "state": null,
                   "speed": null,
                   "pass": false,
@@ -188,8 +188,8 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.getUser('users', 1);\n        })",
                   "err": {},
-                  "uuid": "e2a0ac5a-db91-4114-b6fd-a5af52f773a3",
-                  "parentUUID": "fa23213d-10ae-4d68-a893-49ec19225475",
+                  "uuid": "83b50ca7-18ac-4606-9760-40b20d0ee4de",
+                  "parentUUID": "5b0c1ce0-3f10-492c-83ac-ca3b042922dc",
                   "isHook": true,
                   "skipped": false
                 }
@@ -209,8 +209,8 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.status).to.eql(200);",
                   "err": {},
-                  "uuid": "3fef125c-b10c-4837-854b-ce4206ecb3ee",
-                  "parentUUID": "fa23213d-10ae-4d68-a893-49ec19225475",
+                  "uuid": "8b178e86-92f3-482c-bd27-8ed843f38c2a",
+                  "parentUUID": "5b0c1ce0-3f10-492c-83ac-ca3b042922dc",
                   "isHook": false,
                   "skipped": false
                 },
@@ -227,8 +227,8 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.data.data.id).to.eql(1);",
                   "err": {},
-                  "uuid": "8f13eda4-9ec3-4ca0-981b-8c63f6a9c48b",
-                  "parentUUID": "fa23213d-10ae-4d68-a893-49ec19225475",
+                  "uuid": "89d1994e-ee90-49e6-9727-da09a463a7f1",
+                  "parentUUID": "5b0c1ce0-3f10-492c-83ac-ca3b042922dc",
                   "isHook": false,
                   "skipped": false
                 },
@@ -236,7 +236,7 @@
                   "title": "verify the object property of the user data",
                   "fullTitle": "Smoke API Testing of reqres GET user resource of the API verify the object property of the user data",
                   "timedOut": false,
-                  "duration": 3,
+                  "duration": 2,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -245,8 +245,8 @@
                   "context": null,
                   "code": "const arrayLength = Object.keys(response.data.data);\nfor (let i = 0; i < arrayLength.length - 1; i++) {\n    (0, chai_1.expect)(Object.getOwnPropertyNames(response.data.data)).to.include(base_1.default.dataUserProperty[i]);\n}",
                   "err": {},
-                  "uuid": "e9e8678d-6555-4e0a-a887-b924f4ab6924",
-                  "parentUUID": "fa23213d-10ae-4d68-a893-49ec19225475",
+                  "uuid": "5ac67b79-c2d3-4b3f-aaff-70a187e734d6",
+                  "parentUUID": "5b0c1ce0-3f10-492c-83ac-ca3b042922dc",
                   "isHook": false,
                   "skipped": false
                 },
@@ -254,7 +254,7 @@
                   "title": "verify user is not found",
                   "fullTitle": "Smoke API Testing of reqres GET user resource of the API verify user is not found",
                   "timedOut": false,
-                  "duration": 160,
+                  "duration": 152,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -263,29 +263,29 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.userNotFound('user', 45);\n            (0, chai_1.expect)(response.status).to.eql(404);\n            (0, chai_1.expect)(response.statusText).to.eql('Not Found');\n        })",
                   "err": {},
-                  "uuid": "d592010e-d917-44f7-badd-ecdb11acff06",
-                  "parentUUID": "fa23213d-10ae-4d68-a893-49ec19225475",
+                  "uuid": "e6c039f8-dd6b-4351-ba08-744f865d7e63",
+                  "parentUUID": "5b0c1ce0-3f10-492c-83ac-ca3b042922dc",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "3fef125c-b10c-4837-854b-ce4206ecb3ee",
-                "8f13eda4-9ec3-4ca0-981b-8c63f6a9c48b",
-                "e9e8678d-6555-4e0a-a887-b924f4ab6924",
-                "d592010e-d917-44f7-badd-ecdb11acff06"
+                "8b178e86-92f3-482c-bd27-8ed843f38c2a",
+                "89d1994e-ee90-49e6-9727-da09a463a7f1",
+                "5ac67b79-c2d3-4b3f-aaff-70a187e734d6",
+                "e6c039f8-dd6b-4351-ba08-744f865d7e63"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 163,
+              "duration": 154,
               "root": false,
               "rootEmpty": false,
-              "_timeout": 3000
+              "_timeout": 5000
             },
             {
-              "uuid": "e5376de4-f6a0-453c-a190-e6cd779cffed",
+              "uuid": "2e3144bf-2522-48f2-aef7-df5176417fbf",
               "title": "GET resources of the API",
               "fullFile": "C:\\Users\\TAOSAND\\Projects Folder\\api_test\\test\\api.spec.ts",
               "file": "\\test\\api.spec.ts",
@@ -294,7 +294,7 @@
                   "title": "\"before all\" hook in \"GET resources of the API\"",
                   "fullTitle": "Smoke API Testing of reqres GET resources of the API \"before all\" hook in \"GET resources of the API\"",
                   "timedOut": false,
-                  "duration": 151,
+                  "duration": 124,
                   "state": null,
                   "speed": null,
                   "pass": false,
@@ -303,8 +303,8 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.getResources('unknown');\n        })",
                   "err": {},
-                  "uuid": "1796ef1a-8193-4b16-917d-ccd576773e90",
-                  "parentUUID": "e5376de4-f6a0-453c-a190-e6cd779cffed",
+                  "uuid": "e8cd0453-a06c-448c-bcd5-5ab301bcd0b8",
+                  "parentUUID": "2e3144bf-2522-48f2-aef7-df5176417fbf",
                   "isHook": true,
                   "skipped": false
                 }
@@ -315,7 +315,7 @@
                   "title": "verify the response status of the resourcse",
                   "fullTitle": "Smoke API Testing of reqres GET resources of the API verify the response status of the resourcse",
                   "timedOut": false,
-                  "duration": 0,
+                  "duration": 1,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -324,8 +324,8 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.status).to.eql(200);",
                   "err": {},
-                  "uuid": "6c832d5b-b9e9-46a0-b515-fb1321b919d4",
-                  "parentUUID": "e5376de4-f6a0-453c-a190-e6cd779cffed",
+                  "uuid": "b0859ff1-15cc-4746-9353-3c7e0ff830bf",
+                  "parentUUID": "2e3144bf-2522-48f2-aef7-df5176417fbf",
                   "isHook": false,
                   "skipped": false
                 },
@@ -342,8 +342,8 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.data.page).to.eql(1);\n(0, chai_1.expect)(response.data.per_page).to.eql(6);\n(0, chai_1.expect)(response.data.total).to.eql(12);\n(0, chai_1.expect)(response.data.total_pages).to.eql(2);",
                   "err": {},
-                  "uuid": "16736842-e746-4339-8b6f-e338137023b7",
-                  "parentUUID": "e5376de4-f6a0-453c-a190-e6cd779cffed",
+                  "uuid": "ec96583f-ec90-4357-b04f-72d621cc226d",
+                  "parentUUID": "2e3144bf-2522-48f2-aef7-df5176417fbf",
                   "isHook": false,
                   "skipped": false
                 },
@@ -351,7 +351,7 @@
                   "title": "verify the length of the resources api",
                   "fullTitle": "Smoke API Testing of reqres GET resources of the API verify the length of the resources api",
                   "timedOut": false,
-                  "duration": 0,
+                  "duration": 1,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -360,8 +360,8 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.data.data.length).to.be.lessThanOrEqual(6);",
                   "err": {},
-                  "uuid": "43dec2fc-1a0e-470f-8d27-532b69e235bb",
-                  "parentUUID": "e5376de4-f6a0-453c-a190-e6cd779cffed",
+                  "uuid": "8cc4d6b6-ee5b-4299-9e01-a4ece564632b",
+                  "parentUUID": "2e3144bf-2522-48f2-aef7-df5176417fbf",
                   "isHook": false,
                   "skipped": false
                 },
@@ -369,7 +369,7 @@
                   "title": "verify the response data property of the resources",
                   "fullTitle": "Smoke API Testing of reqres GET resources of the API verify the response data property of the resources",
                   "timedOut": false,
-                  "duration": 2,
+                  "duration": 1,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -378,29 +378,29 @@
                   "context": null,
                   "code": "for (let i = 0; i < response.data.data.length - 1; i++) {\n    (0, chai_1.expect)(Object.getOwnPropertyNames(response.data.data[i])).to.include(base_1.default.dataResourceProperty[i]);\n}",
                   "err": {},
-                  "uuid": "1b6a5efc-7035-4e0e-9247-96197204005d",
-                  "parentUUID": "e5376de4-f6a0-453c-a190-e6cd779cffed",
+                  "uuid": "10c56531-f49c-403f-9fb1-2bbaf38643e3",
+                  "parentUUID": "2e3144bf-2522-48f2-aef7-df5176417fbf",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "6c832d5b-b9e9-46a0-b515-fb1321b919d4",
-                "16736842-e746-4339-8b6f-e338137023b7",
-                "43dec2fc-1a0e-470f-8d27-532b69e235bb",
-                "1b6a5efc-7035-4e0e-9247-96197204005d"
+                "b0859ff1-15cc-4746-9353-3c7e0ff830bf",
+                "ec96583f-ec90-4357-b04f-72d621cc226d",
+                "8cc4d6b6-ee5b-4299-9e01-a4ece564632b",
+                "10c56531-f49c-403f-9fb1-2bbaf38643e3"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 2,
+              "duration": 3,
               "root": false,
               "rootEmpty": false,
-              "_timeout": 3000
+              "_timeout": 5000
             },
             {
-              "uuid": "c60c2a5c-6336-4b5c-b248-828994d61a91",
+              "uuid": "d7b9fc09-801b-4caf-b359-4773019856fc",
               "title": "GET resource API",
               "fullFile": "C:\\Users\\TAOSAND\\Projects Folder\\api_test\\test\\api.spec.ts",
               "file": "\\test\\api.spec.ts",
@@ -409,7 +409,7 @@
                   "title": "\"before all\" hook in \"GET resource API\"",
                   "fullTitle": "Smoke API Testing of reqres GET resource API \"before all\" hook in \"GET resource API\"",
                   "timedOut": false,
-                  "duration": 142,
+                  "duration": 1129,
                   "state": null,
                   "speed": null,
                   "pass": false,
@@ -418,8 +418,8 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.getResource('unknown', 2);\n        })",
                   "err": {},
-                  "uuid": "b88f1dc6-d1da-4534-9b61-9a9480e9f8a7",
-                  "parentUUID": "c60c2a5c-6336-4b5c-b248-828994d61a91",
+                  "uuid": "ffe075be-f6db-4d94-81ee-57df57361a5d",
+                  "parentUUID": "d7b9fc09-801b-4caf-b359-4773019856fc",
                   "isHook": true,
                   "skipped": false
                 }
@@ -439,8 +439,8 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.status).to.eql(200);",
                   "err": {},
-                  "uuid": "34f94ae3-abf8-48a5-b56d-c84e08325e5b",
-                  "parentUUID": "c60c2a5c-6336-4b5c-b248-828994d61a91",
+                  "uuid": "e30758bc-d78e-4014-b7e1-349fa79aa78a",
+                  "parentUUID": "d7b9fc09-801b-4caf-b359-4773019856fc",
                   "isHook": false,
                   "skipped": false
                 },
@@ -457,8 +457,8 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.data.data.id).to.eql(2);",
                   "err": {},
-                  "uuid": "54d5a61d-12e3-4278-9e0d-932691b01f3d",
-                  "parentUUID": "c60c2a5c-6336-4b5c-b248-828994d61a91",
+                  "uuid": "1eaa5456-ccf0-4ba2-89ec-00caec698bef",
+                  "parentUUID": "d7b9fc09-801b-4caf-b359-4773019856fc",
                   "isHook": false,
                   "skipped": false
                 },
@@ -466,7 +466,7 @@
                   "title": "verify the response data property of the resource",
                   "fullTitle": "Smoke API Testing of reqres GET resource API verify the response data property of the resource",
                   "timedOut": false,
-                  "duration": 2,
+                  "duration": 3,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -475,8 +475,8 @@
                   "context": null,
                   "code": "const arrayLength = Object.keys(response.data.data);\nfor (let i = 0; i < arrayLength.length - 1; i++) {\n    (0, chai_1.expect)(Object.getOwnPropertyNames(response.data.data)).to.include(base_1.default.dataResourceProperty[i]);\n}",
                   "err": {},
-                  "uuid": "9549969a-9fce-462a-95e7-e636ddd09537",
-                  "parentUUID": "c60c2a5c-6336-4b5c-b248-828994d61a91",
+                  "uuid": "69d8d3fd-087c-474e-934e-722bea90106c",
+                  "parentUUID": "d7b9fc09-801b-4caf-b359-4773019856fc",
                   "isHook": false,
                   "skipped": false
                 },
@@ -493,29 +493,29 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.getResource('unknown', 25);\n            (0, chai_1.expect)(response.status).to.eql(404);\n        })",
                   "err": {},
-                  "uuid": "ca0f2b9f-c1bd-4bb4-b0ae-39bc885a6920",
-                  "parentUUID": "c60c2a5c-6336-4b5c-b248-828994d61a91",
+                  "uuid": "d295e254-2961-4b87-84c4-9216556fb514",
+                  "parentUUID": "d7b9fc09-801b-4caf-b359-4773019856fc",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "34f94ae3-abf8-48a5-b56d-c84e08325e5b",
-                "54d5a61d-12e3-4278-9e0d-932691b01f3d",
-                "9549969a-9fce-462a-95e7-e636ddd09537",
-                "ca0f2b9f-c1bd-4bb4-b0ae-39bc885a6920"
+                "e30758bc-d78e-4014-b7e1-349fa79aa78a",
+                "1eaa5456-ccf0-4ba2-89ec-00caec698bef",
+                "69d8d3fd-087c-474e-934e-722bea90106c",
+                "d295e254-2961-4b87-84c4-9216556fb514"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 141,
+              "duration": 142,
               "root": false,
               "rootEmpty": false,
-              "_timeout": 3000
+              "_timeout": 5000
             },
             {
-              "uuid": "00fd3cc9-0353-4d6c-afa6-b68e99b72893",
+              "uuid": "071dd5c1-b9d5-4714-aedb-731350900614",
               "title": "create USER",
               "fullFile": "C:\\Users\\TAOSAND\\Projects Folder\\api_test\\test\\api.spec.ts",
               "file": "\\test\\api.spec.ts",
@@ -524,7 +524,7 @@
                   "title": "\"before all\" hook in \"create USER\"",
                   "fullTitle": "Smoke API Testing of reqres create USER \"before all\" hook in \"create USER\"",
                   "timedOut": false,
-                  "duration": 244,
+                  "duration": 293,
                   "state": null,
                   "speed": null,
                   "pass": false,
@@ -533,8 +533,8 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.createUser('users', { name: base_1.default.dataProps[0].name, job: base_1.default.dataProps[0].job });\n        })",
                   "err": {},
-                  "uuid": "e3d6b315-d344-4335-92b8-6278807907fe",
-                  "parentUUID": "00fd3cc9-0353-4d6c-afa6-b68e99b72893",
+                  "uuid": "5b995204-3232-4141-b118-de0ebe4e172a",
+                  "parentUUID": "071dd5c1-b9d5-4714-aedb-731350900614",
                   "isHook": true,
                   "skipped": false
                 }
@@ -545,7 +545,7 @@
                   "title": "verify user has been created",
                   "fullTitle": "Smoke API Testing of reqres create USER verify user has been created",
                   "timedOut": false,
-                  "duration": 0,
+                  "duration": 1,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -554,8 +554,8 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.status).to.eql(201);",
                   "err": {},
-                  "uuid": "842fab4f-fdaf-4125-8e9b-ea0a72dcee6f",
-                  "parentUUID": "00fd3cc9-0353-4d6c-afa6-b68e99b72893",
+                  "uuid": "dd05697c-a5de-475b-84c9-f48b0ce20b93",
+                  "parentUUID": "071dd5c1-b9d5-4714-aedb-731350900614",
                   "isHook": false,
                   "skipped": false
                 },
@@ -572,8 +572,8 @@
                   "context": null,
                   "code": "const arrayLength = Object.keys(response.data);\nfor (let i = 0; i < arrayLength.length - 1; i++) {\n    (0, chai_1.expect)(Object.getOwnPropertyNames(response.data)).to.include(base_1.default.dataCreationProperty[i]);\n}",
                   "err": {},
-                  "uuid": "6e47e2f0-c34a-45e0-9bf8-236c0bd19af9",
-                  "parentUUID": "00fd3cc9-0353-4d6c-afa6-b68e99b72893",
+                  "uuid": "7a5ad703-6f21-4395-9d99-5f46cff3949f",
+                  "parentUUID": "071dd5c1-b9d5-4714-aedb-731350900614",
                   "isHook": false,
                   "skipped": false
                 },
@@ -581,7 +581,7 @@
                   "title": "verify the value of the 'name' and 'job' property",
                   "fullTitle": "Smoke API Testing of reqres create USER verify the value of the 'name' and 'job' property",
                   "timedOut": false,
-                  "duration": 1,
+                  "duration": 0,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -590,17 +590,17 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.data.name).to.eql(base_1.default.dataProps[0].name);\n(0, chai_1.expect)(response.data.job).to.eql(base_1.default.dataProps[0].job);",
                   "err": {},
-                  "uuid": "7e5d07fc-4b8f-4d83-8a4a-f4f9f808e7ca",
-                  "parentUUID": "00fd3cc9-0353-4d6c-afa6-b68e99b72893",
+                  "uuid": "c94f1cf4-eabb-4bf6-b80e-9910e09b9b75",
+                  "parentUUID": "071dd5c1-b9d5-4714-aedb-731350900614",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "842fab4f-fdaf-4125-8e9b-ea0a72dcee6f",
-                "6e47e2f0-c34a-45e0-9bf8-236c0bd19af9",
-                "7e5d07fc-4b8f-4d83-8a4a-f4f9f808e7ca"
+                "dd05697c-a5de-475b-84c9-f48b0ce20b93",
+                "7a5ad703-6f21-4395-9d99-5f46cff3949f",
+                "c94f1cf4-eabb-4bf6-b80e-9910e09b9b75"
               ],
               "failures": [],
               "pending": [],
@@ -608,10 +608,10 @@
               "duration": 4,
               "root": false,
               "rootEmpty": false,
-              "_timeout": 3000
+              "_timeout": 5000
             },
             {
-              "uuid": "ad45f385-ab91-46e3-9df6-1331229fc430",
+              "uuid": "a019be35-c5f0-451c-bf12-6920547c6fae",
               "title": "Update USER",
               "fullFile": "C:\\Users\\TAOSAND\\Projects Folder\\api_test\\test\\api.spec.ts",
               "file": "\\test\\api.spec.ts",
@@ -629,8 +629,8 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.updateUser('users', { name: base_1.default.dataProps[1].name, job: base_1.default.dataProps[1].job }, 2);\n        })",
                   "err": {},
-                  "uuid": "fe92da56-874d-455b-b20b-0d5450e0823a",
-                  "parentUUID": "ad45f385-ab91-46e3-9df6-1331229fc430",
+                  "uuid": "b9b3f19e-a109-4c53-be69-eaa86f0e16bf",
+                  "parentUUID": "a019be35-c5f0-451c-bf12-6920547c6fae",
                   "isHook": true,
                   "skipped": false
                 }
@@ -650,15 +650,15 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.status).to.eql(200);\n(0, chai_1.expect)(response.data.name).to.eql(base_1.default.dataProps[1].name);\n(0, chai_1.expect)(response.data.job).to.eql(base_1.default.dataProps[1].job);\n(0, chai_1.expect)(response.data.hasOwnProperty('updatedAt')).to.be.true;",
                   "err": {},
-                  "uuid": "e0716a3d-9cd4-4202-890b-3d4e0dee56f3",
-                  "parentUUID": "ad45f385-ab91-46e3-9df6-1331229fc430",
+                  "uuid": "c17c61db-67d1-452d-9700-04ddba6fd81f",
+                  "parentUUID": "a019be35-c5f0-451c-bf12-6920547c6fae",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "e0716a3d-9cd4-4202-890b-3d4e0dee56f3"
+                "c17c61db-67d1-452d-9700-04ddba6fd81f"
               ],
               "failures": [],
               "pending": [],
@@ -666,10 +666,10 @@
               "duration": 1,
               "root": false,
               "rootEmpty": false,
-              "_timeout": 3000
+              "_timeout": 5000
             },
             {
-              "uuid": "779ba783-0ea8-4885-a9c8-366477c493c3",
+              "uuid": "9e6c66c7-c863-4c00-8c6b-8535ca66111f",
               "title": "Delete USER",
               "fullFile": "C:\\Users\\TAOSAND\\Projects Folder\\api_test\\test\\api.spec.ts",
               "file": "\\test\\api.spec.ts",
@@ -678,7 +678,7 @@
                   "title": "\"before all\" hook in \"Delete USER\"",
                   "fullTitle": "Smoke API Testing of reqres Delete USER \"before all\" hook in \"Delete USER\"",
                   "timedOut": false,
-                  "duration": 243,
+                  "duration": 260,
                   "state": null,
                   "speed": null,
                   "pass": false,
@@ -687,8 +687,8 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.deleteUser('users', 2);\n        })",
                   "err": {},
-                  "uuid": "baf0694d-2024-4897-961f-afa5be6bab54",
-                  "parentUUID": "779ba783-0ea8-4885-a9c8-366477c493c3",
+                  "uuid": "8452a1c2-7cb7-49e8-89fb-5eab1d193ec9",
+                  "parentUUID": "9e6c66c7-c863-4c00-8c6b-8535ca66111f",
                   "isHook": true,
                   "skipped": false
                 }
@@ -708,15 +708,15 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.status).to.eql(204);\n(0, chai_1.expect)(Boolean(response.data)).to.be.false;",
                   "err": {},
-                  "uuid": "1fac934d-aeb8-42ec-9906-e26ecd3cf974",
-                  "parentUUID": "779ba783-0ea8-4885-a9c8-366477c493c3",
+                  "uuid": "c0afb0eb-7d5c-4985-b107-f703d2d70aa6",
+                  "parentUUID": "9e6c66c7-c863-4c00-8c6b-8535ca66111f",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "1fac934d-aeb8-42ec-9906-e26ecd3cf974"
+                "c0afb0eb-7d5c-4985-b107-f703d2d70aa6"
               ],
               "failures": [],
               "pending": [],
@@ -724,10 +724,10 @@
               "duration": 1,
               "root": false,
               "rootEmpty": false,
-              "_timeout": 3000
+              "_timeout": 5000
             },
             {
-              "uuid": "14683e0f-4f61-4205-9537-23ac66c3c8fe",
+              "uuid": "8a143917-0d8a-4a8f-bd8a-badfdcc4e69a",
               "title": "Login",
               "fullFile": "C:\\Users\\TAOSAND\\Projects Folder\\api_test\\test\\api.spec.ts",
               "file": "\\test\\api.spec.ts",
@@ -736,7 +736,7 @@
                   "title": "\"before all\" hook in \"Login\"",
                   "fullTitle": "Smoke API Testing of reqres Login \"before all\" hook in \"Login\"",
                   "timedOut": false,
-                  "duration": 254,
+                  "duration": 257,
                   "state": null,
                   "speed": null,
                   "pass": false,
@@ -745,8 +745,8 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.login('login', { email: base_1.default.dataProps[0].email, password: base_1.default.dataProps[0].password });\n        })",
                   "err": {},
-                  "uuid": "836641cd-6fff-481f-99af-33a37913315e",
-                  "parentUUID": "14683e0f-4f61-4205-9537-23ac66c3c8fe",
+                  "uuid": "062841f8-b0e4-4e3c-8133-a4a8960f4542",
+                  "parentUUID": "8a143917-0d8a-4a8f-bd8a-badfdcc4e69a",
                   "isHook": true,
                   "skipped": false
                 }
@@ -766,8 +766,8 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.status).to.eql(200);",
                   "err": {},
-                  "uuid": "792178b3-38a1-48ee-b649-8934bbe2c2bf",
-                  "parentUUID": "14683e0f-4f61-4205-9537-23ac66c3c8fe",
+                  "uuid": "2307a5c2-ab64-4513-aba7-527e7b02cef2",
+                  "parentUUID": "8a143917-0d8a-4a8f-bd8a-badfdcc4e69a",
                   "isHook": false,
                   "skipped": false
                 },
@@ -784,8 +784,8 @@
                   "context": null,
                   "code": "// eslint-disable-next-line @typescript-eslint/no-unsafe-call, no-prototype-builtins\n(0, chai_1.expect)(response.data.hasOwnProperty('token')).to.be.true;",
                   "err": {},
-                  "uuid": "33038c3c-a45f-4d8b-8b61-d237e8b4322e",
-                  "parentUUID": "14683e0f-4f61-4205-9537-23ac66c3c8fe",
+                  "uuid": "2f2b38dd-3012-4e74-8368-da8cfe7ab118",
+                  "parentUUID": "8a143917-0d8a-4a8f-bd8a-badfdcc4e69a",
                   "isHook": false,
                   "skipped": false
                 },
@@ -793,7 +793,7 @@
                   "title": "verify that the account is not login",
                   "fullTitle": "Smoke API Testing of reqres Login verify that the account is not login",
                   "timedOut": false,
-                  "duration": 244,
+                  "duration": 262,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -802,28 +802,28 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.login('login', { email: base_1.default.dataProps[0].email });\n            (0, chai_1.expect)(response.status).to.eql(400);\n            (0, chai_1.expect)(response.status).to.eql(400);\n        })",
                   "err": {},
-                  "uuid": "1c0b35d1-5357-4a61-9c3a-b3fb2d273aa8",
-                  "parentUUID": "14683e0f-4f61-4205-9537-23ac66c3c8fe",
+                  "uuid": "aa9b4b40-8504-448e-a0ac-fdf778f63aec",
+                  "parentUUID": "8a143917-0d8a-4a8f-bd8a-badfdcc4e69a",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "792178b3-38a1-48ee-b649-8934bbe2c2bf",
-                "33038c3c-a45f-4d8b-8b61-d237e8b4322e",
-                "1c0b35d1-5357-4a61-9c3a-b3fb2d273aa8"
+                "2307a5c2-ab64-4513-aba7-527e7b02cef2",
+                "2f2b38dd-3012-4e74-8368-da8cfe7ab118",
+                "aa9b4b40-8504-448e-a0ac-fdf778f63aec"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 244,
+              "duration": 262,
               "root": false,
               "rootEmpty": false,
-              "_timeout": 3000
+              "_timeout": 5000
             },
             {
-              "uuid": "2bf8a63b-551d-4f1f-b25f-9c7c9c2b5aa5",
+              "uuid": "c375cbbc-1bdc-46d1-ad0b-6f763a33c2d4",
               "title": "Register",
               "fullFile": "C:\\Users\\TAOSAND\\Projects Folder\\api_test\\test\\api.spec.ts",
               "file": "\\test\\api.spec.ts",
@@ -832,7 +832,7 @@
                   "title": "\"before all\" hook in \"Register\"",
                   "fullTitle": "Smoke API Testing of reqres Register \"before all\" hook in \"Register\"",
                   "timedOut": false,
-                  "duration": 253,
+                  "duration": 317,
                   "state": null,
                   "speed": null,
                   "pass": false,
@@ -841,8 +841,8 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.register('register', { email: base_1.default.dataProps[0].email, password: base_1.default.dataProps[0].password });\n        })",
                   "err": {},
-                  "uuid": "985f4d13-072e-45a6-900c-0e444ccb7116",
-                  "parentUUID": "2bf8a63b-551d-4f1f-b25f-9c7c9c2b5aa5",
+                  "uuid": "3c7086c8-98d5-46da-9f53-c783d021bba6",
+                  "parentUUID": "c375cbbc-1bdc-46d1-ad0b-6f763a33c2d4",
                   "isHook": true,
                   "skipped": false
                 }
@@ -853,7 +853,7 @@
                   "title": "verify account has been created",
                   "fullTitle": "Smoke API Testing of reqres Register verify account has been created",
                   "timedOut": false,
-                  "duration": 1,
+                  "duration": 0,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -862,8 +862,8 @@
                   "context": null,
                   "code": "(0, chai_1.expect)(response.status).to.eql(200);",
                   "err": {},
-                  "uuid": "95e5ca97-8ff6-4c0a-9295-12ff5a6a7a3a",
-                  "parentUUID": "2bf8a63b-551d-4f1f-b25f-9c7c9c2b5aa5",
+                  "uuid": "f5c6030c-a741-4379-babb-221e94640bdb",
+                  "parentUUID": "c375cbbc-1bdc-46d1-ad0b-6f763a33c2d4",
                   "isHook": false,
                   "skipped": false
                 },
@@ -880,8 +880,8 @@
                   "context": null,
                   "code": "// eslint-disable-next-line @typescript-eslint/no-unsafe-call, no-prototype-builtins\n(0, chai_1.expect)(response.data.hasOwnProperty('token')).to.be.true;\n(0, chai_1.expect)(response.data.hasOwnProperty('id')).to.be.true;",
                   "err": {},
-                  "uuid": "21b73e79-46d8-4938-9a7c-5d4609931fd6",
-                  "parentUUID": "2bf8a63b-551d-4f1f-b25f-9c7c9c2b5aa5",
+                  "uuid": "151eca0b-6eda-49ee-8b4c-db83be9eaae3",
+                  "parentUUID": "c375cbbc-1bdc-46d1-ad0b-6f763a33c2d4",
                   "isHook": false,
                   "skipped": false
                 },
@@ -889,7 +889,7 @@
                   "title": "verify that the account has not been created",
                   "fullTitle": "Smoke API Testing of reqres Register verify that the account has not been created",
                   "timedOut": false,
-                  "duration": 239,
+                  "duration": 247,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -898,25 +898,64 @@
                   "context": null,
                   "code": "__awaiter(void 0, void 0, void 0, function* () {\n            response = yield api_helper_1.default.register('register', { email: base_1.default.dataProps[0].email });\n            (0, chai_1.expect)(response.status).to.eql(400);\n            (0, chai_1.expect)(response.data).to.eql(base_1.default.errorProps);\n        })",
                   "err": {},
-                  "uuid": "008bcf5e-f17a-49fa-b512-eff4d6bcce22",
-                  "parentUUID": "2bf8a63b-551d-4f1f-b25f-9c7c9c2b5aa5",
+                  "uuid": "fe61bc24-6cf3-4054-a008-e4107c3a0eb5",
+                  "parentUUID": "c375cbbc-1bdc-46d1-ad0b-6f763a33c2d4",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "95e5ca97-8ff6-4c0a-9295-12ff5a6a7a3a",
-                "21b73e79-46d8-4938-9a7c-5d4609931fd6",
-                "008bcf5e-f17a-49fa-b512-eff4d6bcce22"
+                "f5c6030c-a741-4379-babb-221e94640bdb",
+                "151eca0b-6eda-49ee-8b4c-db83be9eaae3",
+                "fe61bc24-6cf3-4054-a008-e4107c3a0eb5"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 241,
+              "duration": 248,
               "root": false,
               "rootEmpty": false,
-              "_timeout": 3000
+              "_timeout": 5000
+            },
+            {
+              "uuid": "51c52766-3e6b-4afd-b3d0-1483abe94f4f",
+              "title": "Delayed Response",
+              "fullFile": "C:\\Users\\TAOSAND\\Projects Folder\\api_test\\test\\api.spec.ts",
+              "file": "\\test\\api.spec.ts",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "verify the timout for the response",
+                  "fullTitle": "Smoke API Testing of reqres Delayed Response verify the timout for the response",
+                  "timedOut": false,
+                  "duration": 3275,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "__awaiter(void 0, void 0, void 0, function* () {\n            const response = yield api_helper_1.default.getUsers('users?delay=3');\n            setTimeout(() => {\n                (0, chai_1.expect)(response.status).to.eql(200);\n            }, 5000);\n        })",
+                  "err": {},
+                  "uuid": "3a1e8ab8-5a73-45fd-8d53-1abc80f24cf0",
+                  "parentUUID": "51c52766-3e6b-4afd-b3d0-1483abe94f4f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "3a1e8ab8-5a73-45fd-8d53-1abc80f24cf0"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 3275,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 5000
             }
           ],
           "passes": [],
@@ -926,7 +965,7 @@
           "duration": 0,
           "root": false,
           "rootEmpty": false,
-          "_timeout": 3000
+          "_timeout": 5000
         }
       ],
       "passes": [],
@@ -936,7 +975,7 @@
       "duration": 0,
       "root": true,
       "rootEmpty": true,
-      "_timeout": 3000
+      "_timeout": 5000
     }
   ],
   "meta": {

@@ -142,6 +142,17 @@ describe('Smoke API Testing of reqres', () => {
         })
     })
 
+    describe('Delete USER', () => {
+        let response: AxiosResponse
+        before(async () => {
+            response = await apiHelper.deleteUser('users', 2)
+        })
+        it('verify that the user has been deleted', () => {
+            expect(response.status).to.eql(204);
+            expect(Boolean(response.data)).to.be.false
+        })
+    })
+
     describe('Login', () => {
         let response: AxiosResponse
         before(async () => {

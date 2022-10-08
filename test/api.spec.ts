@@ -185,6 +185,7 @@ describe('Smoke API Testing of reqres', () => {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-call, no-prototype-builtins
             expect(response.data.hasOwnProperty('token')).to.be.true;
             expect(response.data.hasOwnProperty('id')).to.be.true;
+            expect(response.data.id).to.eql(4)
         });
     
         it('verify that the account has not been created', async () => {
